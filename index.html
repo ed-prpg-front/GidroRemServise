@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>ГидроРемСервис</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=a4693a01-b319-41f2-a02c-476509b3e106&lang=ru_RU"
+		type="text/javascript">
+		</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+	<div class="header__content">
+		<div class="header__menu menu">
+
+			<div class="menu__top">
+				<div class="menu__logo">
+					<div class="menu__title title-menu">
+						<a href="index.html">
+							<img src="img/header/grs.png" alt="grs">
+						</a>
+					</div>
+					<div class="menu__bottom-image">
+						<a href="index.html">
+							<img src="img/header/logo.png" alt="" class="menu__logo-image">
+						</a>
+					</div>
+					<a href="index.html" class="menu__subtitle">
+						<span>работаем</span><br> с 1991 года
+					</a>
+				</div>
+				<div class="menu__location location-menu">
+					<div class="location-menu__text">
+						<a href="#map" class="location-menu__address-main _goto" data-da=".contacts-menu__text,992,last">
+							<div class="location-menu__address">
+								Уфа,
+							</div>
+							<div class="location-menu__address">
+								ул. Инициативная 11/2
+							</div>
+						</a>
+						<div class="location-menu__subtitle">
+							Схема проезда
+						</div>
+					</div>
+					<div class="location-menu__image">
+						<a href="#map" class="location-menu__icon _goto">
+							<img src="img/header/location.svg" alt="location-icon">
+						</a>
+					</div>
+				</div>
+				<div class="menu__contacts contacts-menu">
+					<div class="contacts-menu__text">
+						<a href="tel:+73472432333" class="contacts-menu__phone contacts-menu__phone_first">
+							<span class="contacts-menu__reception">Приемная:</span>
+							<span class="contacts-menu__number">+7(347)</span>
+							243-23-33
+						</a>
+						<a href="tel:+73472403511" class="contacts-menu__phone contacts-menu__phone_second">
+							240-35-11
+						</a>
+						<a href="tel:+73472426271" class="contacts-menu__phone contacts-menu__phone_second contacts-margin">
+							242-62-71
+						</a>
+						<a href="mailto:remont@grs-ufa.ru" class="contacts-menu__email" data-da=".menu__item_last,992,last">
+							remont@grs-ufa.ru
+						</a>
+					</div>
+					<a href="tel:+73472432333" class="contacts-menu__image">
+						<img src="img/header/phone.svg" alt="phone-icon">
+					</a>
+				</div>
+			</div>
+			<div class="menu__bottom">
+				<ul class="menu__submenu" data-da=".menu__item_services,992,last">
+					<li class="menu__subitem">
+						<a href="technics.html" class="menu__sublink">Ремонт грузоподъемной техники</a>
+					</li>
+					<li class="menu__subitem">
+						<a href="building.html" class="menu__sublink">Ремонт строительно-
+							дорожной техники</a>
+					</li>
+					<li class="menu__subitem">
+						<a href="metal.html" class="menu__sublink">Ремонт металлоконструкций
+							техники</a>
+					</li>
+					<li class="menu__subitem">
+						<a href="security.html" class="menu__sublink">Экспертиза безопасности</a>
+					</li>
+					<li class="menu__subitem">
+						<a href="diagnostics.html" class="menu__sublink">Диагностика и мобильный сервис</a>
+					</li>
+					<li class="menu__subitem">
+						<a href="repairDVS.html" class="menu__sublink">Ремонт ДВС и ТНВД</a>
+					</li>
+					<li class="menu__subitem">
+						<a href="transmission.html" class="menu__sublink">Ремонт трансмиссий ГМП и КПП</a>
+					</li>
+					<li class="menu__subitem">
+						<a href="gydrocylinders.html" class="menu__sublink">Ремонт гидроцилиндров</a>
+					</li>
+					<li class="menu__subitem">
+						<a href="repairGidropumpandGidrorasp.html" class="menu__sublink">Ремонт гидронасосов и
+							гидрораспределителей</a>
+					</li>
+				</ul>
+				<nav class="menu__body">
+					<ul class="menu__mobile-menu">
+						<li class="menu__newicon newicon-menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</li>
+						<li>
+							<a href="#no-scroll" class="menu__subsubtitle">
+								МЕНЮ
+							</a>
+						</li>
+					</ul>
+					<ul class="menu__list">
+						<li class="menu__close">
+							Закрыть
+						</li>
+						<div class="menu__icon icon-menu" data-da=".menu__item_services,992,last">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<li class="menu__item_services">
+							<a href="#no-scroll" class="menu__link menu__link_services">
+								Услуги
+							</a>
+						</li>
+						<li>
+							<a href="company.html" class="menu__link">
+								О компании
+							</a>
+						</li>
+						<li>
+							<a href="#" class="menu__link">
+								Новости
+							</a>
+						</li>
+						<li>
+							<a href="photogallery.html" class="menu__link">
+								Фотогалерея
+							</a>
+						</li>
+						<li>
+							<a href="https://grs-ufa.ru/" class="menu__link">
+								Магазин техники
+								и запчастей
+							</a>
+						</li>
+						<li class="menu__item_last">
+
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+		<main class="page">
+			<section class="services">
+				<div class="services__types">
+					<div class="services__image">
+						<img src="img/typeOfServices/background.png" alt="">
+					</div>
+					<div class="services__content">
+						<div class="services__container">
+							<a href="#" class=" services__logo">
+								<img src="img/typeOfServices/grswhite.png" alt="" class="services__image-grs">
+							</a>
+							<div class="services__text">
+								<div class="services__container-for-text">
+									<h1 class="services__title">
+										виды услуг
+									</h1>
+									<p class="services__text services__text_paragraph">
+										Мы производим весь спектр услуг по узловому, текущему и капитальному ремонту специальной и
+										грузоподъемной техники. Ремонт экскаваторов и погрузчиков, автокранов и гидроподъемников,
+										буровых машин и навесного оборудования.
+										Ремонт объемного гидропривода, включая насосы, моторы, распределители, цилиндры. Ремонт
+										дизельных ДВС и ТНВД. Ремонт гидравлических и механических трансмиссий. Экспертизу
+										безопасности грузоподъемных машин, ремонт металоконструкций.
+										Ремонт нестандартного оборудования.
+									</p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="jobs">
+				<div class="jobs__container">
+					<div class="jobs__column">
+						<div class="jobs__item item-jobs">
+							<a href="technics.html" class="jobs__image jobs__image_first">
+								<img src="img/jobs/repairoflifitingequipment.png" alt="">
+							</a>
+							<div class="item-jobs__signature">
+								<img src="img/advantages/decoration.png" alt="" class="item-jobs__image-signature">
+								<a href="technics.html" class="item-jobs__title item-jobs__title_first">ремонт <br>
+									грузоподъемной <br>
+									техники </a>
+							</div>
+						</div>
+						<div class="jobs__item item-jobs">
+							<a href="building.html" class="jobs__image jobs__image_second">
+								<img src="img/jobs/repairofroadconstructionequipment.png" alt="">
+							</a>
+							<div class="item-jobs__signature">
+								<img src="img/advantages/decoration.png" alt="" class="item-jobs__image-signature">
+								<a href="building.html" class="item-jobs__title">ремонт <br>
+									строительно-<br> дорожной техники
+								</a>
+							</div>
+						</div>
+						<div class="jobs__item item-jobs">
+							<a href="metal.html" class="jobs__image jobs__image_third">
+								<img src="img/jobs/welder.png" alt="">
+							</a>
+							<div class="item-jobs__signature item-jobs__signature_third">
+								<img src="img/advantages/decoration.png" alt="" class="item-jobs__image-signature">
+								<a href="metal.html" class="item-jobs__title">ремонт <br>
+									металлоконструкций <br>
+									техники <br>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="jobs__column">
+						<div class="jobs__item item-jobs">
+							<a href="security.html" class="jobs__image jobs__image_fourth">
+								<img src="img/jobs/securityofexpertise.png" alt="">
+							</a>
+							<div class="item-jobs__signature">
+								<img src="img/advantages/decoration.png" alt="" class="item-jobs__image-signature">
+								<a href="security.html" class="item-jobs__title">экспертиза <br>
+									безопасности
+								</a>
+							</div>
+						</div>
+						<div class="jobs__item item-jobs">
+							<a href="repairDVS.html" class="jobs__image  jobs__image_fiveth">
+								<img src="img/jobs/repairDVSandTNVD.png" alt="">
+							</a>
+							<div class="item-jobs__signature">
+								<img src="img/advantages/decoration.png" alt="" class="item-jobs__image-signature">
+								<a href="repairDVS.html" class="item-jobs__title">
+									ремонт двс <br>
+									и тнвд
+								</a>
+							</div>
+						</div>
+						<div class="jobs__item item-jobs">
+							<a href="diagnostics.html" class="jobs__image jobs__image_sixth">
+								<img src="img/jobs/Diagnosticsandmobileservice.png" alt="">
+							</a>
+							<div class="item-jobs__signature">
+								<img src="img/advantages/decoration.png" alt="" class="item-jobs__image-signature">
+								<a href="diagnostics.html" class="item-jobs__title">диагностика и <br>
+									мобильный <br> сервис
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="jobs__column">
+						<div class="jobs__item item-jobs">
+							<a href="transmission.html" class="jobs__image jobs__image_seventh">
+								<img src="img/jobs/repairoftransmission.png" alt="">
+							</a>
+							<div class="item-jobs__signature">
+								<img src="img/advantages/decoration.png" alt="" class="item-jobs__image-signature">
+								<a href="transmission.html" class="item-jobs__title">ремонт транмиссий <br>
+									гмп и кпп
+								</a>
+							</div>
+						</div>
+						<div class="jobs__item item-jobs">
+							<a href="gydrocylinders.html" class="jobs__image jobs__image_eigth">
+								<img src="img/jobs/repairofgydrocilindes.png" alt="">
+							</a>
+							<div class="item-jobs__signature">
+								<img src="img/advantages/decoration.png" alt="" class="item-jobs__image-signature">
+								<a href="gydrocylinders.html" class="item-jobs__title">ремонт <br>
+									гидроцилиндров
+								</a>
+							</div>
+						</div>
+						<div class="jobs__item item-jobs">
+							<a href="repairGidropumpandGidrorasp.html" class="jobs__image jobs__image_nineth">
+								<img src="img/jobs/repairofpumps.png" alt="">
+							</a>
+							<div class="item-jobs__signature">
+								<img src="img/advantages/decoration.png" alt="" class="item-jobs__image-signature">
+								<a href="repairGidropumpandGidrorasp.html" class="item-jobs__title">ремонт <br>
+									гидронасосов и <br>
+									гидрораспределителей
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="advantages">
+				<div class="advantages__container">
+					<div class="advantages__inner-container">
+						<div class="advantages__form-container form-advantages">
+							<div class="advantages__form form-advantages__inner">
+								<div class="form-advantages__title">
+									Есть вопрос?
+								</div>
+								<div class="form-advantages__button button-form">
+									<a href="#ask" class="button-form__text _popup-link">
+										Задать вопрос
+									</a>
+									<img src="img/advantages/return.png" alt="return" class="button-form__image">
+								</div>
+								<div class="form-advantages__appeal">
+									Отправьте нам свой вопрос
+								</div>
+								<div class="form-advantages__specialists">
+									и специалисты ответят Вам в рабочее время
+								</div>
+							</div>
+							<div class="advantages__button-call call-button">
+								<a href="tel:+73472432333" class="call-button__text">
+									Позвонить нам
+								</a>
+								<a href="tel:+73472432333">
+									<img src="img/advantages/call.png" alt="return" class="call-button__image">
+								</a>
+							</div>
+						</div>
+						<div class="advantages__man man-advantages">
+							<div class="man-advantages__container">
+							</div>
+							<div class="man-advantages__image">
+								<img src="img/advantages/newman.png" alt="">
+							</div>
+							<div class="man-advantages__text text-advantages">
+								<div class="text-advantages__work">
+									Работаем
+								</div>
+								<div class="text-advantages__conscience">
+									на совесть
+								</div>
+								<div class="text-advantages__year">
+									с 1991 г.
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="advantages__maincontent">
+						<h2 class="advantages__maintitle">
+							ГидроРемСервис это-
+						</h2>
+						<h3 class="advantages__someadvantages advantages__someadvantages_first ">
+							Более 30 лет опыта за спиной
+						</h3>
+						<h3 class="advantages__someadvantages">
+							Гарантия от 6 месяцев до 1 года
+						</h3>
+						<h3 class="advantages__someadvantages">
+							Собственная производственная база
+						</h3>
+						<h3 class="advantages__someadvantages advantages__someadvantages_fourth">
+							Более 2000  <span class="advantages__metr"> м</span>
+						</h3>
+						<h3 class="advantages__someadvantages">
+							Большой коллектив спецалистов
+						</h3>
+						<h3 class="advantages__someadvantages">
+							Выездной мобильный сервис
+						</h3>
+						<h3 class="advantages__someadvantages">
+							Сервисные сертификаты заводов-изготовителей
+						</h3>
+					</div>
+					<div class="mapgrm">
+						<div class="mapgrm__container">
+							<div class="mapgrm__content">
+								<div class="mapgrm__logo">
+									<img src="img/advantages/logo.png" alt="">
+								</div>
+								<div class="mapgrm__inner">
+									<div class="mapgrm__office">
+										Офис
+									</div>
+									<div class="mapgrm__address">
+										Уфа, ул.<br> Инициативная 11/2
+									</div>
+									<div class="mapgrm__phones">
+										Телефоны
+									</div>
+									<div class="mapgrm__reception">
+										Приемная:
+									</div>
+									<a href="tel:+73472432333" class="mapgrm__phone mapgrm__phone_first">
+										<span>+7 (347)</span>
+										243-23-33
+									</a>
+									<a href="tel:+73472403511" class="mapgrm__phone">
+										<span>+7 (347)</span>
+										240-35-11
+									</a>
+									<a href="+73472426271" class="mapgrm__phone  mapgrm__phone_third">
+										<span>+7 (347) </span>
+										242-62-71
+									</a>
+									<div class="mapgrm__email">
+										Почта
+										<span>
+											<a href="#" class="mapgrm__linkmail">
+												remont@grs-ufa.ru
+											</a>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="footerformap">
+								<div class="footerformap__content">
+									ООО «ГИДРОРЕМСЕРВИС», <br> Все права защищены.
+								</div>
+							</div>
+						</div>
+						<div id="map"></div>
+					</div>
+
+				</div>
+			</section>
+		</main>
+		<section class="footer">
+   <div class="footer__container">
+      <ul class="footer__links">
+         <li class="footer__items">
+            <a href="technics.html" class="footer__link">
+               Ремонт <br>грузоподъемной техники
+            </a>
+         </li>
+         <li class="footer__items">
+            <a href="building.html" class="footer__link">
+               Ремонт строительно- <br> дорожной техники
+            </a>
+         </li>
+         <li class="footer__items">
+            <a href="metal.html" class="footer__link">
+               Ремонт металлоконструкций <br>
+               техники
+            </a>
+         </li>
+         <li class="footer__items">
+            <a href="security.html" class="footer__link">
+               Экспертиза безопасности
+            </a>
+         </li>
+         <li class="footer__items">
+            <a href="repairDVS.html" class="footer__link">
+               Ремонт ДВС и ТНВД
+            </a>
+         </li>
+         <li class="footer__items">
+            <a href="diagnostics.html" class="footer__link">
+               Диагностика и <br>мобильный сервис
+            </a>
+         </li>
+         <li class="footer__items">
+            <a href="transmission.html" class="footer__link">
+               Ремонт транмиссий <br>ГМП и КПП
+            </a>
+         </li>
+         <li class="footer__items">
+            <a href="gydrocylinders.html" class="footer__link">
+               Ремонт гидроцилиндров
+            </a>
+         </li>
+         <li class="footer__items">
+            <a href="repairGidropumpandGidrorasp.html" class="footer__link">
+               Ремонт гидронасосов и <br>
+               гидрораспределителей
+            </a>
+         </li>
+      </ul>
+      <div class="footer__slider">
+         <h4 class="footer__title">
+            Фотогалерея:
+         </h4>
+         <div class="footer__wrapper-slider">
+            <div class="slider__container swiper-container">
+               <div class="slider__wrapper swiper-wrapper">
+                  <div class="slider__slider swiper-slide">
+                     <div class="slider__image ">
+                        <img src="img/footer/firstslider.png" alt="">
+                     </div>
+                  </div>
+                  <div class="slider__slider swiper-slide">
+                     <div class="slider__image ">
+                        <img src="img/footer/secondslider.png" alt="">
+                     </div>
+                  </div>
+                  <div class="slider__slider swiper-slide ">
+                     <div class="slider__image">
+                        <img src="img/footer/thirdslider.png" alt="">
+                     </div>
+                  </div>
+                  <div class="slider__slider swiper-slide ">
+                     <div class="slider__image">
+                        <img src="img/footer/fourthslider.png" alt="">
+                     </div>
+                  </div>
+                  <div class="slider__slider swiper-slide ">
+                     <div class="slider__image">
+                        <img src="img/footer/fivethslider.png" alt="">
+                     </div>
+                  </div>
+                  <div class="slider__slider swiper-slide ">
+                     <div class="slider__image">
+                        <img src="img/footer/sixthslider.png" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer__news">
+            Новости:
+         </div>
+         <a href="#" class="footer__btn">
+            Читать актуальные новости <br>
+            о компании ГидроРемСервис
+         </a>
+      </div>
+      <div class="footer__shop shop-footer">
+         <h5 class="shop-footer__title">
+            Наш магазин:
+         </h5>
+         <a href="https://grs-ufa.ru/" class="shop-footer__card">
+            <div class="shop-footer__excavator">
+               <img src="img/footer/excavator.png" alt="">
+            </div>
+            <div class="shop-footer__sell">
+               Продажа техники
+               и запчастей
+               "ТД Гидроремсервис"
+            </div>
+         </a>
+         <div class="shop-footer__footer">
+            <div class="shop-footer__text">
+               @grs-remont.ru, 1991-2021
+               Политика конфиденциальности
+            </div>
+            <div class="shop-footer__icon">
+               <img src="img/footer/littlelogo.png" alt="">
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+	</div>
+	<div class="popup popup_ask popup_callback">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+			<form enctype="multipart/form-data" method="post" action="#" class="form">
+				<div class="form__line">
+					<div class="form__title">
+						ЗАДАТЬ ВОПРОС
+					</div>
+				</div>
+				<div class="form__text">
+					<label for="problems" class="form__subtitle">
+						Опишите ваш вопрос/проблему
+					</label>
+					<textarea class="form__input" type="textarea" id=" problems">
+					</textarea>
+				</div>
+				<div class="form__line_file">
+					<p>
+						<input type="file" name="photo" class="form__file">
+					</p>
+				</div>
+				<div class="form__phone">
+					<label for="phone" class="form__title-phone">
+						Почта или телефон для обратной связи
+					</label>
+					<input type="text" id="phone" class="form__input-phone">
+				</div>
+				<div class="form__line">
+					<button type="submit" class="form__button">
+						Отправить
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="popup popup_subscribe-message">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_video">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close popup__close_video"></div>
+			<div class="popup__video _video"></div>
+		</div>
+	</div>
+</div>
+	<!-- Swiper -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+	<script type="text/javascript">
+
+		ymaps.ready(init);
+		var myMap;
+
+		function init() {
+
+			myMap = new ymaps.Map("map", {
+				center: [54.83183868308156, 56.09391986441794], // Координаты центра карты
+				zoom: 17 // Масштаб карты
+			});
+
+			myMap.controls.add(
+				new ymaps.control.ZoomControl()  // Добавление элемента управления картой
+			);
+
+			myPlacemark = new ymaps.Placemark([54.83183868308156, 56.09391986441794], { // Координаты метки объекта
+				balloonContent: "<div class='ya_map'>Заезжайте в гости!</div>" // Подсказка метки
+			}, {
+				preset: "twirl#redDotIcon" // Тип метки
+			});
+
+			myMap.geoObjects.add(myPlacemark); // Добавление метки
+			myPlacemark.balloon.open(); // Открытие подсказки метки
+
+		};
+
+	</script>
+</body>
+
+</html>
